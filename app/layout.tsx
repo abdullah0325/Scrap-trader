@@ -3,7 +3,6 @@ import { Cairo, Roboto } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
-import GoogleTranslate from '@/components/layout/GoogleTranslate'
 import { Toaster } from 'react-hot-toast'
 import { AuthProvider } from '@/components/providers/AuthProvider'
 
@@ -51,7 +50,6 @@ export default function RootLayout({
       <body className="font-roboto">
         <AuthProvider>
           <main>{children}</main>
-          <GoogleTranslate />
           <Toaster position="top-right" />
         </AuthProvider>
       </body>

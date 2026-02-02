@@ -202,3 +202,36 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #084328;
 }
+
+/* Hide Google Translate default UI to prevent banners/auto-heading */
+.goog-te-banner-frame.skiptranslate,
+.goog-te-banner-frame,
+.goog-te-balloon-frame,
+.goog-te-tp-frame,
+.goog-te-menu-frame {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
+/* Hide the gadget/logo inserted by Google */
+.goog-logo-link,
+.goog-te-gadget-icon,
+.goog-te-gadget {
+  display: none !important;
+}
+
+/* Prevent page shifting when Google injects inline frames */
+body {
+  top: 0 !important;
+}
+
+/* Keep the hidden widget hidden */
+#google_translate_element,
+#google_translate_hidden {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}

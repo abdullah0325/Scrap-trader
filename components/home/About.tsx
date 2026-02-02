@@ -93,18 +93,24 @@ export default function WhyChooseUs() {
         
           </div>
 
-          {/* Right Side - Image */}
-          <div className="lg:w-1/2">
-            <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-lg">
+          {/* Right Side - Image (always visible; responsive height; subtle overlay) */}
+          <div className="lg:w-1/2 w-full">
+            <div className="relative h-56 sm:h-64 md:h-80 lg:h-[400px] xl:h-[500px] rounded-lg overflow-hidden shadow-lg bg-gray-100">
               <Image
                 src="/WhatsApp Image 2026-01-14 at 3.17.49 PM.jpeg"
                 alt="Saudi Scrap Trader Process"
                 fill
                 className="object-cover"
               />
-            </div>
 
-            
+              {/* Subtle dark overlay to lower opacity for text contrast */}
+              <div className="absolute inset-0 bg-black/20 pointer-events-none" />
+
+              {/* Fallback background content so there's never empty space */}
+              <div className="absolute inset-0 flex items-center justify-center text-gray-400 opacity-0" aria-hidden>
+                <i className="fas fa-industry text-4xl"></i>
+              </div>
+            </div>
           </div>
 
         </div>

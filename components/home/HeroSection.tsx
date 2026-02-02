@@ -400,26 +400,26 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-row flex-wrap items-center justify-center gap-3"
           >
-            {/* WhatsApp Button - Smaller */}
+            {/* WhatsApp Button - Responsive */}
             <a
               href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative px-6 py-3 bg-gradient-to-r from-[#25D366] to-[#1EBEA5] text-white font-bold rounded-xl hover:scale-[1.02] transition-all duration-300 shadow-lg flex items-center justify-center min-w-[180px]"
+              className="group relative px-4 py-2 sm:px-5 sm:py-3 bg-gradient-to-r from-[#25D366] to-[#1EBEA5] text-white font-bold rounded-lg hover:scale-[1.02] transition-all duration-300 shadow-lg flex items-center justify-center min-w-[120px] sm:min-w-[150px] md:min-w-[180px] text-sm sm:text-base"
             >
-              <i className="fab fa-whatsapp text-xl mr-2"></i>
-              <span className="text-base">WhatsApp</span>
+              <i className="fab fa-whatsapp text-lg mr-2"></i>
+              <span className="truncate">WhatsApp</span>
             </a>
 
-            {/* Contact Us Button - Smaller */}
+            {/* Contact Us Button - Responsive */}
             <a
               href="#contact"
-              className="group relative px-6 py-3 bg-gradient-to-r from-[#2c3e50] to-[#4a5568] text-white font-bold rounded-xl hover:scale-[1.02] transition-all duration-300 shadow-lg flex items-center justify-center min-w-[180px]"
+              className="group relative px-4 py-2 sm:px-5 sm:py-3 bg-gradient-to-r from-[#2c3e50] to-[#4a5568] text-white font-bold rounded-lg hover:scale-[1.02] transition-all duration-300 shadow-lg flex items-center justify-center min-w-[120px] sm:min-w-[150px] md:min-w-[180px] text-sm sm:text-base"
             >
-              <i className="fas fa-envelope text-lg mr-2"></i>
-              <span className="text-base">Contact us</span>
+              <i className="fas fa-envelope text-base mr-2"></i>
+              <span className="truncate">Contact us</span>
             </a>
           </motion.div>
           

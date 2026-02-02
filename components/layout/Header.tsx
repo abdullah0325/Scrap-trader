@@ -178,6 +178,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useSession, signOut } from 'next-auth/react'
+import GoogleTranslate from '@/components/layout/GoogleTranslate'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -317,6 +318,11 @@ export default function Header() {
 
            
             
+
+            {/* Language selector */}
+            <div className="inline-flex items-center">
+              <GoogleTranslate />
+            </div>
 
             {/* Mobile Menu Button */}
             <button

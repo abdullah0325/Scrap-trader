@@ -121,11 +121,11 @@ export default function ContactSection() {
                     <div className="ml-4">
                       <h4 className="font-semibold text-gray-900">Call Us</h4>
                       <div className="mt-1 space-y-1">
-                          <a href="tel:+9660583954403" className="text-gray-600 hover:text-[#b87333] block">
-                          +966 0583 954 403 (Baroz)
+                          <a href="tel:+966583954403" className="text-gray-600 hover:text-[#b87333] block">
+                          +966 58 395 4403 (Baroz)
                        </a>
-                        <a href="tel:+9660531901277" className="text-gray-600 hover:text-[#b87333] block">
-                          +966 0531 901 277 (Amjad)
+                        <a href="tel:+966531901277" className="text-gray-600 hover:text-[#b87333] block">
+                          +966 53 190 1277 (Amjad)
                         </a>
                       
                       </div>
@@ -168,8 +168,8 @@ export default function ContactSection() {
                     </div>
                     <div className="ml-4">
                       <h4 className="font-semibold text-gray-900">Email</h4>
-                      <a href="mailto:info@saudiscraptrader.com" className="text-gray-600 hover:text-[#2c3e50] block mt-1">
-                        info@saudiscraptrader.com
+                      <a href="mailto:saudiscraptrader@gmail.com" className="text-gray-600 hover:text-[#2c3e50] block mt-1">
+                        saudiscraptrader@gmail.com
                       </a>
                     </div>
                   </div>
@@ -292,12 +292,12 @@ export default function ContactSection() {
                   />
                 </div>
 
-                {/* Two Buttons at Bottom */}
-                <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                {/* Two Buttons at Bottom - always side-by-side (50/50) */}
+                <div className="flex flex-row gap-3 pt-4">
                   <button
                     type="submit"
                     disabled={loading}
-                    className="flex-1 py-3 bg-[#2c3e50] text-white font-medium rounded-lg hover:bg-[#1a252f] transition-colors disabled:opacity-50 flex items-center justify-center"
+                    className="w-1/2 min-w-0 py-2 sm:py-3 text-sm sm:text-base bg-[#2c3e50] text-white font-medium rounded-lg hover:bg-[#1a252f] transition-colors disabled:opacity-50 flex items-center justify-center"
                   >
                     {loading ? (
                       <>
@@ -315,7 +315,7 @@ export default function ContactSection() {
                   <button
                     type="button"
                     onClick={handleWhatsAppClick}
-                    className="flex-1 py-3 bg-[#25D366] text-white font-medium rounded-lg hover:bg-[#1da851] transition-colors flex items-center justify-center"
+                    className="w-1/2 min-w-0 py-2 sm:py-3 text-sm sm:text-base bg-[#25D366] text-white font-medium rounded-lg hover:bg-[#1da851] transition-colors flex items-center justify-center"
                   >
                     <i className="fab fa-whatsapp mr-2"></i>
                     WhatsApp Now
