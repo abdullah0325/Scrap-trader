@@ -7,6 +7,8 @@ import TeamSection from '@/components/home/TeamSection'
 import ContactSection from '@/components/home/ContactSection'
 import WhyChooseUs from '@/components/home/About'
 
+export const dynamic = 'force-dynamic'
+
 export default async function HomePage() {
   try {
     // Fetch directly from the DB to ensure live data (server-side)
