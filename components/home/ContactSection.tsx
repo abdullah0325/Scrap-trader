@@ -121,12 +121,13 @@ export default function ContactSection() {
                     <div className="ml-4">
                       <h4 className="font-semibold text-gray-900">Call Us</h4>
                       <div className="mt-1 space-y-1">
+                          <a href="tel:+9660583954403" className="text-gray-600 hover:text-[#b87333] block">
+                          +966 0583 954 403 (Baroz)
+                       </a>
                         <a href="tel:+9660531901277" className="text-gray-600 hover:text-[#b87333] block">
                           +966 0531 901 277 (Amjad)
                         </a>
-                        <a href="tel:+9660583954403" className="text-gray-600 hover:text-[#b87333] block">
-                          +966 0583 954 403 (Baroz)
-                       </a>
+                      
                       </div>
                     </div>
                   </div>
@@ -139,6 +140,14 @@ export default function ContactSection() {
                     <div className="ml-4">
                       <h4 className="font-semibold text-gray-900">WhatsApp</h4>
                       <div className="mt-1 space-y-1">
+                         <a 
+                          href="https://wa.me/966583954403" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-gray-600 hover:text-[#25D366] block"
+                        >
+                          +966 58 395 4403 (Baroz)
+                        </a>
                         <a 
                           href="https://wa.me/966531901277" 
                           target="_blank" 
@@ -147,14 +156,7 @@ export default function ContactSection() {
                         >
                           +966 53 190 1277 (Amjad)
                         </a>
-                        <a 
-                          href="https://wa.me/966583954403" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="text-gray-600 hover:text-[#25D366] block"
-                        >
-                          +966 58 395 4403 (Baroz)
-                        </a>
+                       
                       </div>
                     </div>
                   </div>
